@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Hero from "@/components/main/Hero";
 
 export default function Home() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   // update class HTML
   useEffect(() => {

@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <section className="my-20 z-20 text-white">
+    <section className="mt-20 z-20 text-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12">
           <div className="mflex justify-center md:justify-start">
