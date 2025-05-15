@@ -11,7 +11,9 @@ const tabOptions = [
   { label: "All Skills", key: "all" },
   { label: "Front-End", key: "frontend" },
   { label: "Back-End", key: "backend" },
-];
+] as const;
+
+type TabKey = typeof tabOptions[number]["key"];
 
 const skillMap = {
   all: Skill_data,
@@ -20,7 +22,7 @@ const skillMap = {
 };
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState<TabKey>("all");
 
   return (
     <section className="flex justify-center bg-[#0b0b0b] text-white pt-20">
