@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed top-0 shadow-lg bg-white/10 dark:bg-[#030014e6] backdrop-blur-md z-30 duration-300 border border-[#7042f861] transition-transform ${
+      className={`w-full fixed top-0 shadow-lg  z-30 duration-300 transition-transform ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
