@@ -206,18 +206,19 @@ export const Full_stack = [
 export const ProjectsAll = [
   {
     title: "Portfolio Website",
-    link: "https://github.com/Reev-Dev/",
+    link: "https://github.com/Reev-Dev/ripay-porto.git",
     description:
       "A personal portfolio website built with Next.JS, ReactJS, Tailwind CSS, and TypeScript. This site showcases information about me, the skills I possess, the projects I’ve worked on, and contact links connected to my social media. It focuses on performance, a clean design, and accessible navigation.",
-    src: "/projects/portfolio.png",
+    src: "/projects/portofolio.png",
     technologies: [
-      "Next.JS",
+      "NextJS",
       "ReactJS",
-      "Tailwind CSS",
+      "TailwindCSS",
       "TypeScript",
       "HTML",
       "CSS",
       "JavaScript",
+      "Material UI",
     ],
   },
   {
@@ -227,5 +228,37 @@ export const ProjectsAll = [
       "A comprehensive full-stack web application developed using PHP, Laravel, and MySQL, designed to monitor and manage data related to school and dormitory operations, while also providing insights into student development and performance.",
     src: "/projects/sismako.png",
     technologies: ["PHP", "Laravel", "MySQL"],
+  },
+  {
+    title: "Redesign Bazma Website",
+    link: "https://github.com/Reev-Dev/web-donasi-bazma.git",
+    description:
+      "A modern and fully responsive redesign of the BAZMA donation website built using Next.js, React, and TailwindCSS. It enhances user experience through improved UI/UX design, donation flow, and mobile accessibility.",
+    src: "/projects/webdonasi.png",
+    technologies: [
+      "NextJS",
+      "ReactJS",
+      "TailwindCSS",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+  },
+  {
+    title: "Game-Store Website",
+    link: "https://github.com/Reev-Dev/GameStore-Tailwind.git",
+    description:
+      "A modern and responsive landing page for a game store built using HTML, CSS, and TailwindCSS. It showcases featured games, pricing sections, and promotional banners with a clean and user-friendly interface.",
+    src: "/projects/gamestore.png",
+    technologies: ["HTML", "CSS", "TailwindCSS"],
+  },
+  {
+    title: "Hospital Website",
+    link: "https://github.com/Reev-Dev/project-rumah-sakit.git",
+    description:
+      "A simple and responsive hospital website built using HTML and CSS. It features a clean layout with sections for services, doctors, and contact information, designed to provide basic hospital information in an accessible format.",
+    src: "/projects/hospital.png",
+    technologies: ["HTML", "CSS"],
   },
 ];

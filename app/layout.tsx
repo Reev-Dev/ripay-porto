@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} flex flex-col min-h-screen bg-[#030014] overflow-y-scroll overflow-x-hidden antialiased`}
       >
@@ -32,6 +32,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           value={{ light: "light", dark: "dark" }}
+          enableSystem={false}
         >
           <StarsCanvas />
           <Navbar />
