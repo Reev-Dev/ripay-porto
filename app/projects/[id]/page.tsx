@@ -54,23 +54,26 @@ const ProjectDetail = () => {
             Teknologi yang Digunakan:
           </h2>
           <div className="flex flex-wrap gap-4">
-            {project.technologies.map((tech, index) => (
-              <div
-                key={index}
-                className="flex items-center bg-[#2A0E61] px-4 py-2 rounded-full"
-              >
-                {getTechImage(tech) && (
-                  <Image
-                    src={getTechImage(tech)}
-                    alt={tech}
-                    width={20}
-                    height={20}
-                    className="mr-2"
-                  />
-                )}
-                <span className="text-white">{tech}</span>
-              </div>
-            ))}
+            {project.technologies.map((tech, index) => {
+              const techImage = getTechImage(tech);
+              return (
+                <div
+                  key={index}
+                  className="flex items-center bg-[#2A0E61] px-4 py-2 rounded-full"
+                >
+                  {techImage && (
+                    <Image
+                      src={techImage}
+                      alt={`${tech} logo`} // Deskripsi yang lebih baik
+                      width={20}
+                      height={20}
+                      className="mr-2"
+                    />
+                  )}
+                  <span className="text-white">{tech}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
 
